@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube</title>
+    <link rel="stylesheet" href="/YOUTUBE/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            height: 60px;
+        }
+        .list-logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 125px;
+            margin-left: 18px;
+        }
+        .list-logo img{
+            height: 25px;
+            margin-left: 20px;
+        }
+        .list-logo span{
+            font-size: 23px;
+        }
+        .search-bar{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .search{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+            padding: 10px;
+            width: 500px;
+            border-radius: 20px;
+        }
+        .bi-mic-fill{
+            background-color: rgb(219, 219, 219);
+            border-radius: 20px;
+            padding: 10px;
+        }
+        .search-right span{
+            margin-right: 30px;
+            font-size: 20px;
+        }
+        .search-A{
+            background-color: brown;
+            border-radius: 90%;
+            padding: 5px;
+            color: white;
+        }
+        .main-page{
+            display: grid;
+            grid-template-columns: 2fr 16fr;
+            margin-top: 10px;
+        }
+        ul{
+            list-style: none;
+            margin-left: -20px;
+        }
+        ul li{
+            margin-bottom: 35px;
+        }
+        li span{
+            font-size: 20px;
+        }
+        li div{
+            font-size: 13px;
+        }
+        .main-cen3{
+            margin-left: -21px;
+        }
+        .main-cen2{
+            margin-left: -7px;
+        }
+        .main-cen1{
+            margin-left: -5px;
+        }
+        article{
+            display: flex;
+            gap: 15px;
+        }
+        .profile{
+            margin-top: 8px;
+        }
+        .profile div{
+            margin-top: 10px;
+        }
+        .pro-1{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .pro-2{
+            font-size: 15px;
+            color: rgb(100, 100, 100);
+        }
+        .pro-3{
+            font-size: 15px;
+            color: rgb(100, 100, 100);
+        }
+        .in-pro-3{
+            color: black;
+            font-size: 17px;
+        }
+        .in-pro-4{
+            color: blue;
+        }
+        .pro-5{
+            background-color: rgb(210, 209, 209);
+            width: 130px;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .pro-5 span{
+            margin-right: 5px;
+        }
+        .main-2{
+            margin-top: 30px;
+            font-size: 18px;
+            color: rgb(52, 52, 52);
+        }
+        .main-2 span{
+            margin-right: 24px;
+        }
+        .main-2-sp{
+            color: black;
+            font-weight: bold;
+            border-bottom: 2px solid black;
+            padding-bottom: 7px;
+        }
+        .main-3{
+            margin-top: 28px;
+        }
+        .main-3 span{
+            margin-right: 10px;
+            background-color: rgb(216, 216, 216);
+            font-size: 16px;
+            padding: 6px;
+            border-radius: 10px;
+        }
+        /* .main-3-sp{
+            background-color: red;
+            color: white;
+        } */
+         .main-4{
+            margin-top: 25px;
+            display: flex;
+            gap: 10px;
+         }
+         iframe{
+            border-radius: 10px;
+         }
+         .main-4-sp1{
+            font-size: 15px;
+            width: 250px;
+         }
+         .main-4-sp2{
+            font-size: 13px;
+            margin-top: 5px;
+            color: rgb(65, 65, 65);
+         }
+         .main-left{
+            position: sticky;
+            top: 60px;
+            align-self: start;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="list-logo">
+            <span class="bi bi-list"></span>
+            <img src="/YOUTUBE/public/images/Youtube-icon.png" alt="icon">
+        </div>
+        <div class="search-bar">
+            <div class="search">
+                <span>Search</span>
+                <span class="bi bi-search"></span>
+            </div>
+            <div>
+                <span class="bi bi-mic-fill"></span>
+            </div>
+        </div>
+        <div class="search-right">
+            <span class="bi bi-camera-video"></span>
+            <span class="bi bi-bell"></span>
+            <span class="search-A">A</span>
+        </div>
+    </header>
+    <main class="main-page">
+        <div class="main-left">
+            <ul>
+                <li>
+                    <span class="bi bi-house-door"></span>
+                    <div class="main-cen1">Home</div>
+                </li>
+                <li>
+                    <span class="bi bi-file-play"></span>
+                    <div class="main-cen2">Shorts</div>
+                </li>
+                <li>
+                    <span class="bi bi-collection-play"></span>
+                    <div class="main-cen3">Subscriptions</div>
+                </li>
+                <li>
+                    <span class="bi bi-file-earmark-play"></span>
+                    <div>You</div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="/YOUTUBE/public/images/Youtube-banner.png" alt="Banner" height="175px" width="1075px">
+            <article>
+                <div>
+                    <img src="/YOUTUBE/public/images/profile.jpg" alt="profile">
+                </div>
+                <div class="profile">
+                    <div class="pro-1">
+                        Dimension BeatX
+                    </div>
+                    <div class="pro-2">
+                        @DimensionBeatX • 16.7K subscribers • 1K videos
+                    </div>
+                    <div class="pro-3">
+                        Dimension BeatX is a Music Record Label under beatX Music & Entertainment. We mostly <span class="in-pro-3">...more</span>
+                    </div>
+                    <div class="pro-4">
+                        <span class="in-pro-4">buymeacoffee.com/DimensionBeatX</span> and 9 more links
+                    </div>
+                    <div class="pro-5">
+                        <span class="bi bi-bell"></span>
+                        <span>Subscribed</span>
+                        <span class="bi bi-chevron-down"></span>
+                    </div>
+                </div>
+            </article>
+            <div class="main-2">
+                <span>Home</span>
+                <span class="main-2-sp">Videos</span>
+                <span>Shorts</span>
+                <span>Live</span>
+                <span>Podcasts</span>
+                <span>Playlists</span>
+                <span>Community</span>
+                <span class="bi bi-search"></span>
+            </div>
+            <div class="main-3">
+                <span>Latest</span>
+                <span class="main-3-sp">Popular</span>
+                <span>Oldest</span>
+            </div>
+            <div class="main-4">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/nuKSkO-tKV0" frameborder="0" height="140px" width="260px"></iframe>
+                    <div class="main-4-sp1">Mere Mehboob Mere Sanam : 8D AUDIO🎧| Bad Newz | Vicky, Triptii</div>
+                    <div class="main-4-sp2">73 views . 3 days ago</div>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/KwKSWlVoyX8" frameborder="0" height="140px" width="260px"></iframe>
+                    <div class="main-4-sp1">Aaj Ki Raat : 8D AUDIO🎧| Stree 2 | Tamannaah Bhatia | Sachin-Jigar</div>
+                    <div class="main-4-sp2">1.3K views . 5 days ago</div>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/XI9epsKEylM" frameborder="0" height="140px" width="260px"></iframe>
+                    <div class="main-4-sp1">Alan Walker feat. Bludnymph - Beautiful Nightmare : 8D AUDIO🎧</div>
+                    <div class="main-4-sp2">71 views . 7 days ago</div>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/NCTAeKFMWTI" frameborder="0" height="140px" width="260px"></iframe>
+                    <div class="main-4-sp1">Tauba Tauba : 8D AUDIO🎧| Bad Newz | Vicky Kaushal | Triptii Dimri</div>
+                    <div class="main-4-sp2">1.8K views . 1 month ago</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
